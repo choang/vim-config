@@ -7,3 +7,9 @@
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = git://github.com/sukima/xmledit.git
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git://github.com/klen/python-mode.git
+[submodule "bundle/nose.vim"]
+	path = bundle/nose.vim
+	url = git://github.com/lambdalisue/nose.vim.git
