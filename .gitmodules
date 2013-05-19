@@ -13,3 +13,6 @@
 [submodule "bundle/nose.vim"]
 	path = bundle/nose.vim
 	url = git://github.com/lambdalisue/nose.vim.git
+[submodule "bundle/vim-makegreen"]
+	path = bundle/vim-makegreen
+	url = git://github.com/reinh/vim-makegreen.git
