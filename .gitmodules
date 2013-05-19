@@ -4,9 +4,6 @@
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = git://github.com/fs111/pydoc.vim.git
-[submodule "bundle/xmledit"]
-	path = bundle/xmledit
-	url = git://github.com/sukima/xmledit.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
