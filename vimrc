@@ -7,8 +7,8 @@ filetype plugin on
 colorscheme desert
 
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set autoindent
 set smartindent
 
@@ -17,7 +17,7 @@ set noerrorbells
 set vb t_vb=                " Disable all bells.  I hate ringing/flashing.
 set ruler                   " show the cursor position all the time
 set cursorline              " have a line indicate the cursor location
-set softtabstop=2           " <BS> over an autoindent deletes both spaces.
+set softtabstop=4           " <BS> over an autoindent deletes both spaces.
 set shiftround              " rounds indent to a multiple of shiftwidth
 set confirm                 " Y-N-C prompt if closing with unsaved changes.
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
@@ -48,4 +48,17 @@ autocmd FileType java,yml,html,xhtml,xml,css setlocal expandtab shiftwidth=2 tab
 
 " Python Mode Options
 "
-autocmd FileType python setlocal colorcolumn=80
+autocmd FileType python setlocal colorcolumn=80 expandtab shiftwidth=4 tabstop=4 softtabstop=4
+
+" Syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['ruby', 'python', 'java'],
+                           \ 'passive_filetypes': ['puppet'] }
+
+" NERDTree
+"
+map <C-n> :NERDTreeToggle<CR>
+" open nerdtree if no files specified on command-line
+autocmd vimenter * if !argc() | NERDTree | endif
+" close nerdtree automatically if NT is the only window left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
