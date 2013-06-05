@@ -1,12 +1,21 @@
 # Vim Plugins
 
-## Plugin Notes
+## Install
 
-### flake8
-git submodule add git://github.com/nvie/vim-flake8.git bundle/flake8
-sudo easy_install flake8
+First, git it!
+<pre>
+git clone git://github.com/choang/vim-config.git ~/.vim
+</pre>
 
-### pydoc
-git submodule add git://github.com/fs111/pydoc.vim.git bundle/pydoc
+Once cloned, you need to update submodules
+<pre>
+cd ~/.vim
+git submodule init
+git submodule update
+</pre>
 
+Create a symlink for your vimrc
+<pre>
+ln -s ~/.vim/vimrc ~/.vimrc
+</pre>
 

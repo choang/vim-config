@@ -43,3 +43,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/checkstyle"]
+	path = bundle/checkstyle
+	url = git://github.com/vim-scripts/java_checkstyle.vim.git

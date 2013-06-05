@@ -62,3 +62,8 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 " close nerdtree automatically if NT is the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Checkstyle
+"
+let Checkstyle_XML = '~/.vim/resources/checkstyle-5.6.jar'
+let Checkstyle_Classpath = '~/.vim/resources/sun_checks.xml'
