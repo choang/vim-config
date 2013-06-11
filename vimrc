@@ -22,6 +22,7 @@ set shiftround              " rounds indent to a multiple of shiftwidth
 set confirm                 " Y-N-C prompt if closing with unsaved changes.
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set hlsearch                " Highlight searches by default.
+set undodir^=~/.vim/undo    " bundle/sensible turns on undo, so this will keep things cleaner
 
 " Split Window
 "
