@@ -4,7 +4,8 @@ syntax on
 filetype plugin indent on
 filetype plugin on
 
-colorscheme desert
+set background=dark
+colorscheme solarized
 
 set expandtab
 set tabstop=4
