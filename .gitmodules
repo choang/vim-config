@@ -46,3 +46,6 @@
 [submodule "bundle/checkstyle"]
 	path = bundle/checkstyle
 	url = git://github.com/vim-scripts/java_checkstyle.vim.git
+[submodule "bundle/nerdtree-tabs"]
+	path = bundle/nerdtree-tabs
+	url = git://github.com/jistr/vim-nerdtree-tabs.git

@@ -58,7 +58,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 " NERDTree
 "
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeTabsToggle<CR>
 " open nerdtree if no files specified on command-line
 autocmd vimenter * if !argc() | NERDTree | endif
 " close nerdtree automatically if NT is the only window left
