@@ -13,17 +13,18 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
-set nu
-set noerrorbells
-set vb t_vb=                " Disable all bells.  I hate ringing/flashing.
-set ruler                   " show the cursor position all the time
-set cursorline              " have a line indicate the cursor location
-set softtabstop=4           " <BS> over an autoindent deletes both spaces.
-set shiftround              " rounds indent to a multiple of shiftwidth
 set confirm                 " Y-N-C prompt if closing with unsaved changes.
-set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+set cursorline              " have a line indicate the cursor location
 set hlsearch                " Highlight searches by default.
+set list                    " show non-printable chars
+set noerrorbells
+set nu                      " line number bucket
+set ruler                   " show the cursor position all the time
+set shiftround              " rounds indent to a multiple of shiftwidth
+set softtabstop=4           " <BS> over an autoindent deletes both spaces.
+set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set undodir^=~/.vim/undo    " bundle/sensible turns on undo, so this will keep things cleaner
+set vb t_vb=                " Disable all bells.  I hate ringing/flashing.
 
 " Split Window
 "
@@ -46,7 +47,7 @@ highlight Folded guibg=black guifg=blue
 set path=**
 set foldmethod=syntax
 "set foldenable
-autocmd FileType java,yml,html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby,java,yml,html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Python Mode Options
 "
