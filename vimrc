@@ -38,6 +38,7 @@ imap <C-W> <C-O><C-W>
 "
 set foldmethod=syntax
 set foldnestmax=3
+set foldlevel=99
 nnoremap <space> za
 vnoremap <space> zf
 highlight Folded guibg=black guifg=blue
@@ -47,11 +48,11 @@ highlight Folded guibg=black guifg=blue
 set path=**
 set foldmethod=syntax
 "set foldenable
-autocmd FileType ruby,java,yml,html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby,yml,html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Python Mode Options
 "
-autocmd FileType python setlocal colorcolumn=80 expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType python,java setlocal colorcolumn=80 expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
