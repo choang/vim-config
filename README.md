@@ -19,3 +19,14 @@ Create a symlink for your vimrc
 ln -s ~/.vim/vimrc ~/.vimrc
 </pre>
 
+## Add plugins
+```bash
+cd ~/vim
+git submodule add <git-repo> bundle/<plugin>
+```
+
+For example
+```bash
+git submodule add git://github.com/tpope/vim-endwise.git bundle/endwise
+```
+
