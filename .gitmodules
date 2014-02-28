@@ -58,3 +58,6 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
