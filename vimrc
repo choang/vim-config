@@ -43,6 +43,9 @@ nnoremap <space> za
 vnoremap <space> zf
 highlight Folded guibg=black guifg=blue
 
+" Remove trailing whitespace
+autocmd FileType c,cpp,java,php,ruby,yml autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " Java
 "
 set path=**
