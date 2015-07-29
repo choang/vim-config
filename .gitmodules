@@ -64,3 +64,6 @@
 [submodule "bundle/vim-ansible-yaml"]
 	path = bundle/vim-ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
+[submodule "bundle/gruvbox"]
+	path = bundle/gruvbox
+	url = git://github.com/morhetz/gruvbox
