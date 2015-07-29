@@ -5,7 +5,7 @@ filetype plugin indent on
 filetype plugin on
 
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 set expandtab
 set tabstop=4
@@ -45,6 +45,9 @@ highlight Folded guibg=black guifg=blue
 
 " Remove trailing whitespace
 autocmd FileType c,cpp,java,php,ruby,yml autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+" Disable auto indent because yaml
+autocmd FileType yml indent off
 
 " Java
 "
