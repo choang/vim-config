@@ -51,14 +51,16 @@ autocmd FileType yml indent off
 
 " Java
 "
+autocmd FileType java setlocal colorcolumn=160 expandtab shiftwidth=4 tabstop=4 softtabstop=4
+
 set path=**
 set foldmethod=syntax
 "set foldenable
-autocmd FileType ruby,yml,html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby,yml,html,xhtml,xml,css setlocal colorcolumn=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Python Mode Options
 "
-autocmd FileType python,java setlocal colorcolumn=80 expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType python setlocal colorcolumn=80 expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
